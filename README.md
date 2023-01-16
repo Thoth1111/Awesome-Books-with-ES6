@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Awesome-Books with ES6]** is a project to create a web based library to store book details, load them from storage and remove them from the library. The project is built as a medium-fidelity wireframe using JS modules and ES6 syntax.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -99,9 +99,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Auto clearing of input fields after submission]**
+- **[list loading from local storage]**
+- **[list created dynamically using JS]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,6 +138,7 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
+git@github.com:Thoth1111/Awesome-Books-with-ES6.git
 
 <!--
 Example commands:
@@ -205,11 +206,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Alwyn Androvelle**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/thoth1111)
+- Twitter: [@twitterhandle](https://twitter.com/@androvelle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/alwyn-androvelle-simiyu)
 
 👤 **Author2**
 
@@ -225,8 +226,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
+- [ ] **[Transitions and animations]**
+- [ ] **[Search function]**
 - [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
