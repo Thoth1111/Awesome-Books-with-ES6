@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h4>Awesome Books</h4>
+        </div>
+        <ul class="tab_container">
+            <li> <a href="#" class="operations_tab list_tab">List</a></li>
+            <li> <a href="#" class="operations_tab add_tab">Add new</a></li>
+            <li> <a href="#" class="operations_tab contact_tab">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="date">
+        <span class="date_time"></span>
+    </div>
+
+    <!--  -->
+
+    <section class="tab_content_1">
+      <header>
+          <h1>All Awesome Books</h1>
+      </header>
+      <div class="empty_bookstore"></div>
+      <table class="table">
+            <tbody class="table_body">
+            </tbody>
+        </table>
+    </section>
+
+    <!--  -->
+
+    <section class="tab_content_2">
+       <form class="book_form">
+          <h2>Add a new book</h2>
+          <fieldset class="form_data">
+             <input type="text" id="title" name="title" placeholder="Title" value="" class="title_input" required>
+             <input type="text" id="author" name="author" placeholder="Author" value="" class="author_input" required>
+          </fieldset>
+          <fieldset class="form_action">
+             <button class="add_btn" type="submit" id="add">Add</button>
+          </fieldset>
+       </form>
+    </section>
+
+    <!--  -->
+
+    <section class="tab_content_3">
+        <header>
+            <h3>Contact Information</h3>
+        </header>
+        <article>
+            <h3>Do you have any questions or you just want to say "Hello"? You can reach out to us!</h3>
+            <ul>
+                <li>Our email: mail@mail.com</li>
+                <li>Our phone number: 0043586534422</li>
+                <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </article>
+    </section>
+
+    <footer>
+        <h6>Copyright ...</h6>
+    </footer>
+
+</body>
+<script type="module" src="./index.js"></script>
+</html>
