@@ -1,16 +1,18 @@
-import { BookActions} from './modules/lib.js';
-import {refresh} from './modules/clear.js';
-import { DateTime} from './modules/luxon.js';
+import { BookActions } from './modules/lib.js';
+import { refresh } from './modules/clear.js';
+import { DateTime } from './modules/luxon.js';
 
 const title = document.querySelector('.title_input');
 const author = document.querySelector('.author_input');
 const form = document.querySelector('.book_form');
 const clock = document.querySelector('.date_time');
-const library = new BookActions;
+const library = new BookActions();
 
 window.addEventListener('load', () => {
   library.displayBooks();
-  const now = DateTime.now().toLocaleString({ weekday: 'short', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit' });
+  const now = DateTime.now().toLocaleString({
+    weekday: 'short', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit',
+  });
   clock.innerHTML = `${now}`;
 });
 

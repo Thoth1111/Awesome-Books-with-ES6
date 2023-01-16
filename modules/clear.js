@@ -1,6 +1,6 @@
 const refresh = (title, author) => {
-    title.value = '';
-    author.value = '';
-  }
+  title.value = '';
+  author.value = '';
+};
 
-  export {refresh};
+export { refresh };
