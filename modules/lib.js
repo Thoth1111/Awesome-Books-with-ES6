@@ -1,7 +1,7 @@
-import Book from './book.js'
-const storedBooks = JSON.parse(localStorage.getItem('bookstored'));
-const empty = document.querySelector('.empty_bookstore');
-const tableBody = document.querySelector('.table_body');
+import Book from './book.js';
+import {
+  storedBooks, empty, title, author, tableBody,
+} from './variables.js';
 
 const BookActions = class AwesomeLibrary {
   constructor() {
@@ -50,4 +50,4 @@ const BookActions = class AwesomeLibrary {
   }
 };
 
-export { BookActions };
+export default BookActions;

@@ -1,11 +1,10 @@
-import { BookActions } from './modules/lib.js';
-import { refresh } from './modules/clear.js';
+import BookActions from './modules/lib.js';
 import { DateTime } from './modules/luxon.js';
+import { addTab, listTab, contactTab } from './modules/listeners.js';
+import {
+  form, clock, listNav, addNav, contactNav, title, author,
+} from './modules/variables.js';
 
-const title = document.querySelector('.title_input');
-const author = document.querySelector('.author_input');
-const form = document.querySelector('.book_form');
-const clock = document.querySelector('.date_time');
 const library = new BookActions();
 
 window.addEventListener('load', () => {
@@ -19,30 +18,10 @@ window.addEventListener('load', () => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   library.addBookDetails();
-  refresh(title, author);
+  title.value = '';
+  author.value = '';
 });
 
-const listNav = document.querySelector('.list_tab');
-const addNav = document.querySelector('.add_tab');
-const contactNav = document.querySelector('.contact_tab');
-const list = document.querySelector('.tab_content_1');
-const add = document.querySelector('.tab_content_2');
-const contact = document.querySelector('.tab_content_3');
-
-addNav.addEventListener('click', () => {
-  list.classList.add('hide');
-  add.classList.add('active');
-  contact.classList.remove('active');
-});
-
-contactNav.addEventListener('click', () => {
-  list.classList.add('hide');
-  add.classList.remove('active');
-  contact.classList.add('active');
-});
-
-listNav.addEventListener('click', () => {
-  list.classList.remove('hide');
-  add.classList.remove('active');
-  contact.classList.remove('active');
-});
+listNav.addEventListener('click', listTab);
+addNav.addEventListener('click', addTab);
+contactNav.addEventListener('click', contactTab);
