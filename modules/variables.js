@@ -1,0 +1,10 @@
+export const storedBooks = JSON.parse(localStorage.getItem('bookstored'));
+export const empty = document.querySelector('.empty_bookstore');
+export const tableBody = document.querySelector('.table_body');
+export const form = document.querySelector('.book_form');
+export const clock = document.querySelector('.date_time');
+export const title = document.querySelector('.title_input');
+export const author = document.querySelector('.author_input');
+export const listNav = document.querySelector('.list_tab');
+export const addNav = document.querySelector('.add_tab');
+export const contactNav = document.querySelector('.contact_tab');
