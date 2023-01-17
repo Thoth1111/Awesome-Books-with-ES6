@@ -111,7 +111,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]([https://thoth1111.github.io/Awesome-Books-with-ES6/])
+- [Live Demo Link](https://thoth1111.github.io/Awesome-Books-with-ES6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
